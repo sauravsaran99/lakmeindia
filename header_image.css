@@ -1,0 +1,89 @@
+.headerImage {
+  /* display: flex;
+    background-image: url("https://cdn.shopify.com/s/files/1/0014/3514/0183/collections/Mob_540xr_x1360.jpg?v=1604933760");
+    height: 400px;
+    background-repeat: no-repeat;
+    background-position: relative;
+    background-size: 100%;
+    justify-content:flex-end ;
+    flex-direction: row;
+    margin: 3px; */
+  background-repeat: no-repeat;
+  background-position: relative;
+  background-attachment: fixed;
+  width: 100%;
+  background-size: 100%;
+  background-image: url("https://cdn.shopify.com/s/files/1/0014/3514/0183/collections/Mob_540xr_x1360.jpg?v=1604933760");
+}
+@media screen and (min-width: 0px) and (max-width: 368px) {
+  .headerImage
+    /* , .header2 */ {
+    width: 100%;
+    height: 350px;
+  }
+}
+.h1 {
+  height: 0px;
+  padding-top: 150px;
+  padding-right: 150px;
+  color: white;
+}
+.header2 {
+  background: rgba(43, 43, 44, 0.3);
+  width: 100%;
+  text-align: right;
+
+  display: flex;
+  /* background-image: url("https://cdn.shopify.com/s/files/1/0014/3514/0183/collections/Mob_540xr_x1360.jpg?v=1604933760"); */
+  min-height: 50px;
+  /* background-repeat: no-repeat;
+    background-position: relative;
+    background-size: 100%; */
+  justify-content: flex-end;
+  flex-direction: row;
+  margin: 3px;
+}
+.locationContact {
+  display: grid;
+  grid-template-rows: 200px;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 10px;
+}
+.locationContact > div {
+  border-top: 2px solid rgb(105, 103, 103);
+  text-align: center;
+  line-height: 8px;
+  padding-top: 50px;
+  background-color: rgb(218, 211, 211);
+}
+.line {
+  display: flex;
+  justify-content: center;
+}
+.line > div {
+  height: 75%;
+  /* width: 0px; */
+  border: 1px solid rgb(78, 77, 77);
+}
+.footer {
+  display: flex;
+}
+.flex {
+  display: flex;
+  justify-content: center;
+}
+.circleBorder {
+  margin: 10px;
+  border: 2px solid #991f53;
+  border-radius: 50%;
+  padding: 10px;
+  background: white;
+}
+.fas,
+.far {
+  color: #991f53;
+}
+.location {
+  margin-top: 20px;
+  height: 10px;
+}
