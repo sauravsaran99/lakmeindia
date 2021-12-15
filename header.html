@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <title>Document</title>
+    <style>
+        .nav{
+          
+            height: 70px;
+            background: black; 
+            display: grid;
+            grid-template-rows:auto ;
+            grid-template-columns: repeat(2,1fr);
+            
+        }
+        .boxleft{
+            width: 90%;
+            height: 30px;
+            padding: 20px;
+           
+            color: white;
+            margin-left: 20px;
+            display: flex;
+        }
+        .boxright{
+            width: 10%;
+            height: 70px;
+          font-size: 25px;
+            display: flex;
+            color: aliceblue;
+             justify-content: space-around; 
+            margin-top: 20px;
+            
+            
+        }
+        select{
+            padding: 1px;
+            background-color: transparent;
+            color: white;
+            border: 0;
+            font-size: 30px;
+        }
+      
+        @media only screen and (min-width:375px) and (max-width:768px){
+            .nav{
+             grid-template-columns: repeat( 2,1fr);
+            }
+        }
+        @media only screen and (min-width:0px) and (max-width:375px){
+            .nav{
+                grid-template-columns: repeat(1,1fr);
+            }
+        }
+       
+        #home{
+            margin-left: 120px;
+            margin-top: 10px;
+        }
+       
+    </style>
+</head>
+<body>
+
+    <div class="nav">
+        <div class="boxleft">
+         
+            <img src="https://lh3.googleusercontent.com/xKMnR4YQUlc6cZGK4Si2xbVG6bmDOU6AnGbfDsSN6eVhzS2N_yQCH84HqewRecjc3oIRva8pOpBed-jInyha9gVTNXmLMpk2yuuzJp2XZA" alt=""> 
+            <div id="home">HOME</div>
+        </div>
+        
+        <div class="boxright">
+           
+             <div id="pro">Product</div> 
+           <div><i class="fal fa-heart"></i></div>
+           
+            <div id="signin"><i class="fal fa-user"></i></div>
+            <div><i class="fal fa-search"></i></div>
+            <div id="cart"><i class="fal fa-shopping-bag"></i></div>
+        </div>    
+    </div>
+       
+</body>
+</html>
+<script>
+     document.querySelector("#home").addEventListener("click",function(){
+        window.location.href ="lakmehome.html"
+    })
+    document.querySelector("#pro").addEventListener("click",function(){
+        window.location.href ="pro.html"
+    })
+    document.querySelector("#cart").addEventListener("click",function(){
+        window.location.href ="cart.html"
+    })
+    document.querySelector("#signin").addEventListener("click",function(){
+        window.location.href ="signIn.html"
+    })
+</script>
