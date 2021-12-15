@@ -1,0 +1,147 @@
+.footer {
+  display: grid;
+  grid-template-rows: 100px 500px;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 15px;
+  background-color: rgb(0, 0, 0);
+  grid-template-areas:
+    "I I I I I I I I I I I I"
+    "C C C C C C C C H H N N";
+}
+/* .footerContent {
+  margin-top: 50px;
+} */
+.footer > div {
+  /* background-color: rgb(76, 69, 69)rgb(255,255,255); */
+  color: white;
+  /* box-sizing: border-box; */
+}
+.image {
+  grid-area: I;
+  padding-left: 25px;
+  padding-top: 15px;
+}
+.contactUs {
+  grid-area: C;
+  display: flex;
+  flex-direction: column;
+  /* box-sizing: border-box; */
+}
+.help {
+  grid-area: H;
+  display: flex;
+}
+.helpNeed {
+  grid-area: N;
+  display: flex;
+}
+.insideImagebox {
+  display: flex;
+}
+p {
+  margin-left: 10px;
+  padding-top: 10px;
+}
+.log {
+  display: flex;
+  margin-left: 15px;
+  /* margin-top: 25px; */
+}
+.circleBorder {
+  margin-left: 15px;
+  border-radius: 25px;
+  /* border: 1px solid brown; */
+  padding: 10%;
+  background: white;
+}
+.blue {
+  border: 2px solid rgb(19, 19, 167);
+  color: blue;
+}
+.pink {
+  border: 2px solid pink;
+  color: pink;
+}
+.red {
+  border: 2px solid red;
+  color: red;
+}
+.fab {
+  font-size: 25px;
+  border: none;
+}
+.contactUs > div {
+  width: 100%;
+  height: 100%;
+}
+.content > p {
+  width: --moz-fit-content;
+  width: fit-content;
+  padding: 5px;
+  padding-left: 15px;
+  padding-bottom: 16px;
+}
+h2 {
+  padding-left: 25px;
+}
+p {
+  padding-left: 15px;
+}
+.help > div {
+  width: 100%;
+  height: 70%;
+}
+.helpNeed > div {
+  width: 100%;
+  height: 70%;
+}
+@media screen and (min-width: 0px) and (max-width: 368px) {
+  .footer {
+    grid-template-rows: 355px;
+    grid-template-columns: repeat(12, 1fr);
+
+    grid-template-areas:
+      "I I I I I I I I I I I I"
+      "H H H H H H H H H H H H"
+      "N N N N N N N N N N N N"
+      "C C C C C C C C C C C C";
+  }
+  .insideImagebox {
+    display: flex;
+    flex-direction: column;
+  }
+  .fab {
+    padding: 1px;
+  }
+  .log {
+    margin: 0px;
+  }
+  .circleBorder {
+    margin-left: 5px;
+  }
+}
+@media screen and (min-width: 368px) and (max-width: 768px) {
+  .footer {
+    grid-template-rows: 150px 500px;
+    grid-template-columns: repeat(12, 1fr);
+
+    grid-template-areas:
+      "I I I I I I I I I I I I"
+      "H H H H H H N N N N N N"
+      "C C C C C C C C C C C C";
+  }
+
+  .fab {
+    padding: 1px;
+  }
+  .log {
+    margin: 0px;
+    background-size: 1px;
+  }
+  .circleBorder {
+    margin-left: 5px;
+  }
+  p {
+    font-size: 12px;
+  }
+}
