@@ -46,6 +46,7 @@ nav {
     margin-top: 10px;
     margin-bottom: 50px;
     background-color: #fff;
+    cursor: pointer;
 }
 
 .dot:focus {
