@@ -227,7 +227,7 @@ productName.classList.add( "productName", "center");
 productName.textContent = elm.name;
 
 productPrice = document.createElement("div")
-productPrice.classList.add( "productPrice", "flex", "center");
+productPrice.classList.add( "productPrice", "flexflex", "center");
 // productPrice.classList.add( "flex");
 
 currentPrice = document.createElement("p");
@@ -262,19 +262,19 @@ productStar.classList.add("flex2", "productStar")
 
 
 star1 = document.createElement("i");
-star1.classList.add("fas", "fa-star")
+star1.classList.add("fas", "starIcon","fa-star")
 
 star2 = document.createElement("i");
-star2.classList.add("fas", "fa-star")
+star2.classList.add("fas","starIcon", "fa-star")
 
 star3 = document.createElement("i");
-star3.classList.add("fas", "fa-star")
+star3.classList.add("fas","starIcon", "fa-star")
 
 star4 = document.createElement("i");
-star4.classList.add("fas", "fa-star")
+star4.classList.add("fas","starIcon", "fa-star")
 
 star5 = document.createElement("i");
-star5.classList.add("fas", "fa-star-half-alt")
+star5.classList.add("fas", "starIcon","fa-star-half-alt")
 
 
 productStar.append(star1,star2,star3,star4,star5)
