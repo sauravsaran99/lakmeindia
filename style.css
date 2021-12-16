@@ -14,26 +14,29 @@ section {
     float: right;
     /* background-color: red; */
     /* background-color: rgb(216, 216, 216); */
-    border: 1px solid rgb(184, 184, 184);
+    /* border: 1px solid rgb(184, 184, 184); */
     position: relative;
     overflow-y: scroll;
 }
 
 .box1 {
     width: 100%;
-    height: 9%;
+    height: 10%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: #fff;
+    position: fixed;
+    z-index: 2;
+    border: 1px solid rgb(184, 184, 184);
 }
 
 .box2 {
     width: 100%;
-    height: 90.8%;
+    height: 90%;
     margin-top: .2%;
     background-color: #fff;
-    color: ;
+    color: #000;
 }
 
 #cross {
@@ -164,17 +167,30 @@ span {
 
 #product {
     width: 100%;
-    height: 150px;
+    height: 170px;
     display: grid;
-    grid-template-rows: repeat(1, 1fr) 30%;
+    grid-template-rows: .7fr 20% 15%;
     grid-template-columns: 35% repeat(2, 1fr);
     grid-gap: 10px;
     overflow: hidden;
+    margin-top: 38px;
 }
 
+.productbox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.div6Box1, .div6Box2, .div6Box3 {
+    width: 30px;
+    height: 100%;
+    margin-left: 1px;
+    background-color: tomato;
+}
 
 .div1 {
-    grid-row: 1/3;
+    grid-row: 1/4;
 }
 
 .div1 img {
@@ -222,3 +238,12 @@ span {
     background: #555; 
   }
 /* scroll bar end */
+
+.totalPrice, .savings, .shipping {
+    justify-content: end;
+    padding-right: 20px;
+}
+
+.div5 {
+    text-decoration-line: line-through;
+}
