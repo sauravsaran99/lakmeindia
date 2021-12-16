@@ -2,7 +2,9 @@
     /* position: absolute; */
 
     background-image: url("https://cdn.shopify.com/s/files/1/0014/3514/0183/collections/Mob_540xr_x1360.jpg?v=1604933760");
-    background-size: cover; 
+    background-size: cover;
+    height: 440px;
+
   }
   @media screen and (min-width: 0px) and (max-width: 368px) {
     .headerImage
@@ -34,7 +36,7 @@ font-weight: 100;
     justify-content: end;
     /* flex-direction: row; */
     /* margin: 3px; */
-    height: 350px
+    height: 440px
   }
   .locationContact {
     display: grid;
