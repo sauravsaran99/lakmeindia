@@ -68,6 +68,7 @@
 .image {
   grid-area: I;
   padding-left: 25px;
+  
   padding-top: 15px;
 }
 .contactUs {
@@ -91,6 +92,8 @@
 }
 .insideImagebox {
   display: flex;
+  justify-content: start;
+  margin-left: 15px;
 }
 .followLatest {
   margin-left: 10px;
@@ -105,9 +108,11 @@
   margin-left: 15px;
   border-radius: 25px;
   /* border: 1px solid brown; */
-  padding: 10%;
+  padding: 3%;
+  /* padding: 10%; */
   background: white;
 }
+
 .blue {
   border: 2px solid rgb(19, 19, 167);
   color: blue;
@@ -135,6 +140,7 @@
   padding-left: 15px;
   padding-bottom: 16px;
   margin-left: 10px;
+  line-height: 25px;
   /* line-height: 18px; */
 }
 
@@ -156,17 +162,25 @@
   width: 100%;
   height: 70%;
 }
-@media screen and (min-width: 0px) and (max-width: 368px) {
+@media screen and (min-width: 0px) and (max-width: 375px) {
   .footer {
-    grid-template-rows: 355px;
+    grid-template-rows: 375px;
+    /* grid-template-rows: 355px; */
     grid-template-columns: repeat(12, 1fr);
-
+    grid-template-rows: 200px 50px 50px 650px 500px;
+    
     grid-template-areas:
       "I I I I I I I I I I I I"
       "H H H H H H H H H H H H"
       "N N N N N N N N N N N N"
       "C C C C C C C C C C C C";
   }
+  .followLatest {
+    margin-left:-17px;
+  }
+  .helpP, .need2{
+    display: none;
+  }    
   .insideImagebox {
     display: flex;
     flex-direction: column;
@@ -174,16 +188,35 @@
   .fab {
     padding: 1px;
   }
+  .getintouch{
+      width: 150px;
+  }
+  .margin-left{
+      margin-left:10px
+  }
+  .aboutUs{
+      margin:10px;
+      text-align: justify;
+  }
+.imageLeft{
+  height:40%; width:55%;
+  margin-left:53px;
+}
+  body{
+    text-align:center;
+      /* margin:0px; */
+      /* position:fixed; */
+  }
   .log {
-    margin: 0px;
+    margin-left: 56px;
   }
   .circleBorder {
     margin-left: 5px;
   }
 }
-@media screen and (min-width: 368px) and (max-width: 768px) {
+@media screen and (min-width: 376px) and (max-width: 768px) {
   .footer {
-    grid-template-rows: 150px 250px;
+    grid-template-rows: 120px 250px 550px 500px;
     grid-template-columns: repeat(12, 1fr);
 
     grid-template-areas:
@@ -191,6 +224,11 @@
       "H H H H H H N N N N N N"
       "C C C C C C C C C C C C";
   }
+
+  .aboutUs{
+    margin:10px;
+    text-align: justify;
+}
 
   .fab {
     padding: 1px;
