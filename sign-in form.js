@@ -1,3 +1,26 @@
+// nav code started here
+
+function goToSignUpPage() {
+    window.location.href = "signUp.html";
+}
+
+
+document.querySelector("#home").addEventListener("click", function() {
+    window.location.href = "lakmehome.html"
+})
+document.querySelector("#pro").addEventListener("click", function() {
+    window.location.href = "pro.html"
+})
+document.querySelector("#cart").addEventListener("click", function() {
+    window.location.href = "cart.html"
+})
+document.querySelector("#signin").addEventListener("click", function() {
+        window.location.href = "signIn.html"
+    })
+    // nav code end here
+
+//  main sign in part start here
+
 var userData = JSON.parse(localStorage.getItem("userDataBase"))
 
 function clickForPass() {
@@ -18,10 +41,6 @@ function signInBtn(event) {
             window.location.href = "product.html"
         }
     }
-
-
 }
 
-function goToSignUpPage() {
-    window.location.href = "signUp.html";
-}
+//  main sign in part end here
