@@ -129,8 +129,12 @@ button:hover {
 }
 
 @media only screen and (min-width: 0px) and (max-width: 449px) {
+    .bgimg-login-layout {
+        width: 100%;
+        min-height: 850px;
+    }
     .boxOf_log_form {
-        height: 61%;
+        height: 56%;
         width: 90%;
     }
     #inputEmail {
