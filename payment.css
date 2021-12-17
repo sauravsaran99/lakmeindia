@@ -20,6 +20,7 @@
 }
 #paymentDiv {
     width: 56%;
+    grid-area: pD;
     
     /* border: 1px solid red; */
     padding: 28px 59.281px 0px 0px;
@@ -29,6 +30,7 @@
     width: 43%;
     border: 1px solid gray;
     padding: 28px 0px 0px 39.5156px;
+    grid-area: iD;
     
 }
 #headSpan1 {
@@ -96,6 +98,7 @@ p{
 .inputs {
     width: 100%;
     float: left;
+    border: 1px solid gray;
     border-radius: 5px;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
@@ -156,4 +159,15 @@ a {
 }
 #regionDiv {
     border:1px solid gray
+}
+
+@media only screen and (min-width:0px) and (max-width:1000px) {
+    #content {
+        height: auto;
+        grid-template-columns: repeat(1, auto);
+        grid-template-rows: auto auto;
+        grid-template-areas: 
+        "iD"
+        "pD";
+    }
 }
