@@ -1,0 +1,136 @@
+.headerImage {
+    /* position: absolute; */
+
+    background-image: url("https://cdn.shopify.com/s/files/1/0014/3514/0183/collections/Mob_540xr_x1360.jpg?v=1604933760");
+    background-size: cover;
+    height: 440px;
+
+  }
+  @media screen and (min-width: 0px) and (max-width: 368px) {
+    .headerImage
+      /* , .header2 */ {
+      width: 100%;
+      height: 350px;
+    }
+  }
+  .h1> h1 {
+color:white;
+font-weight: 100;
+
+  }
+  .h1 {
+    height: 0px;
+    padding-top: 123px;
+    padding-right: 156px;
+    color: white;
+  }
+  .header2 {
+    background: rgba(43, 43, 44, 0.4);
+    width: 100%;
+    text-align: right;
+  
+    display: flex;
+    /* background-image: url("https://cdn.shopify.com/s/files/1/0014/3514/0183/collections/Mob_540xr_x1360.jpg?v=1604933760"); */
+    min-height: 50px;
+
+    justify-content: end;
+    /* flex-direction: row; */
+    /* margin: 3px; */
+    height: 440px
+  }
+  .locationContact {
+    display: grid;
+    grid-template-rows: 200px;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 10px;
+  }
+  .locationContact > div {
+    border-top: 2px solid rgb(105, 103, 103);
+    text-align: center;
+    line-height: 8px;
+    padding-top: 50px;
+    background-color: rgb(218, 211, 211);
+  }
+  .line {
+    display: flex;
+    justify-content: center;
+  }
+  .line > div {
+    height: 75%;
+    /* width: 0px; */
+    border: 1px solid rgb(78, 77, 77);
+  }
+  .footer {
+    display: flex;
+  }
+  .flex {
+    display: flex;
+    justify-content: center;
+  }
+  .circleBorder {
+    margin: 10px;
+    border: 2px solid #991f53;
+    border-radius: 50%;
+    padding: 10px;
+    background: white;
+  }
+  .fas,
+  .far {
+    color: #991f53;
+  }
+  .location {
+    margin-top: 20px;
+    height: 10px;
+  }
+
+
+@media screen and (min-width: 368px) and (max-width: 768px) {
+
+
+    .headerImage {
+        background-repeat: no-repeat;
+    background-image: url("https://cdn.shopify.com/s/files/1/0014/3514/0183/collections/Mob_540xr_x375.jpg?v=1604933760");
+    background-size: cover;
+    background-position: center center;
+    width:100%; height:100%; 
+    /* position: absolute; */
+    }
+
+    .h1{
+        padding-right: 120px;
+        padding-top: 70px;
+    }
+    .h1>h1{
+font-size: 20px
+    }
+    .header2{
+        /* width:100%; height:100%;  */
+    
+            height: 145px;
+    }
+}
+
+@media screen and (min-width: 0px) and (max-width: 375px) {
+    .headerImage {
+        background-repeat: no-repeat;
+    background-image: url("https://cdn.shopify.com/s/files/1/0014/3514/0183/collections/Mob_540xr_x375.jpg?v=1604933760");
+    background-size: cover;
+    background-position: center center;
+    width:100%; height:100%; 
+    /* position: absolute; */
+    }
+    .header2{
+    /* width:100%; height:100%;  */
+
+        height: 156px;
+    }
+    .h1{
+        padding-top: 45px;
+        padding-right: 10px;
+    }
+    .h1>h1{
+        font-weight: 100;
+        font-size: 20px;
+    }
+
+}
