@@ -71,6 +71,7 @@ arr.map(function(elm, ind) {
         document.querySelector('.shipping').textContent = '₹'+' '+'43';
         document.querySelector('.totalPrice2').textContent = '₹'+' '+(43+sum);
     } 
+
 var section2 = document.createElement('section');
 section2.setAttribute('id', 'product');
 var div1 = document.createElement('div');
@@ -88,7 +89,9 @@ div4.textContent = '₹' + elm.currentPrice;
 var div5 = document.createElement('div');
 div5.setAttribute('class', 'productbox div5');
 
+if(elm.oldPrice != null) {
     div5.textContent = '₹' + elm.oldPrice;
+}
 
 
 var div6 = document.createElement('div');
