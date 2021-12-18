@@ -6,6 +6,10 @@
     font-family: 'Rubik', sans-serif;
 }
 
+.fixed {
+    right: 0;
+    position: fixed;
+}
 
 section {
     /* position: absolute; */
@@ -20,7 +24,7 @@ section {
 }
 
 .box1 {
-    width: 100%;
+    width: 380px;
     height: 10%;
     display: flex;
     justify-content: space-between;

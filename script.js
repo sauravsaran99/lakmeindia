@@ -1,5 +1,5 @@
 
-let oldArr = [{"image": "https://cdn.shopify.com/s/files/1/0014/3514/0183/products/1000x1000-hero_1_500x.jpg?v=1620801652", "name": "Lakme 9TO5 VITAMIN C + SKINCARE VALUE SET", "currentPrice": "999", "oldPrice": "1,297", "discoutPrice": "23% off", "isSoldOut": null},
+let oldArr = [{"image": "https://cdn.shopify.com/s/files/1/0014/3514/0183/products/1000x1000-hero_1_500x.jpg?v=1620801652", "name": "Lakme 9TO5 VITAMIN C + SKINCARE VALUE SET", "currentPrice": "999", "oldPrice": "1297", "discoutPrice": "23% off", "isSoldOut": null},
 {"image": "https://cdn.shopify.com/s/files/1/0014/3514/0183/products/img1_3_1_500x.jpg?v=1620910668", "name": "Lakme GREEN TEA ESSENTIALS KIT", "currentPrice": "699", "oldPrice": "847", "discoutPrice": "17% off", "isSoldOut": null},
 {"image": "https://cdn.shopify.com/s/files/1/0014/3514/0183/products/Lakme9to5Primer_MatteLipColorRedLetter_500x.jpg?v=1598243140", "name": "Lakme 9 to 5 Primer + Matte Lip Color", "currentPrice": "300", "oldPrice": "500", "discoutPrice": "40% off", "isSoldOut": null},
 {"image": "https://cdn.shopify.com/s/files/1/0014/3514/0183/products/24544_H-8901030758850_3e09b888-1276-44a2-9665-fa293cbd5d3_500x.jpg?v=1601470864", "name": "Lakme Forever Matte Liquid Lip Color", "currentPrice": "295", "oldPrice": null, "discoutPrice": null, "isSoldOut": null},
@@ -47,7 +47,6 @@ if(arr = []) {
 
 let sum = 0;
 let oldSum = 0;
-let notSum = 0;
 
 addingData(arr);
 
@@ -56,14 +55,8 @@ function addingData() {
 arr.map(function(elm, ind) {
 
     sum += Number(elm.currentPrice);
+    oldSum += Number(elm.oldPrice);
 
-    if(elm.oldPrice == null) {
-        notSum = Number(elm.oldPrice);
-    } else {
-        oldSum += Number(elm.oldPrice);
-    }
-    console.log(oldSum)
-    // div1.setAttribute('src', elm.image)
 var section2 = document.createElement('section');
 section2.setAttribute('id', 'product');
 var div1 = document.createElement('div');
@@ -73,8 +66,8 @@ var div2p = document.createElement('p');
 div2p.textContent = elm.name;
 div2.append(div2p)
 div2.setAttribute('class', 'productbox div2');
-// var div3 = document.createElement('div');
-// div3.setAttribute('class', 'productbox');
+
+
 var div4 = document.createElement('div');
 div4.setAttribute('class', 'productbox');
 div4.textContent = '₹' + elm.currentPrice
@@ -87,15 +80,13 @@ if(elm.oldPrice == null) {
 }
 
 
-// console.log(typeof(Number(elm.currentPrice)))
 var div6 = document.createElement('div');
 div6.setAttribute('class', 'productbox div6');
 
 var div7 = document.createElement('div');
 div7.setAttribute('class', 'productbox');
 
-// var div8 = document.createElement('div');
-// div8.setAttribute('class', 'productbox');
+
 
 document.querySelector('.box2').append(section2);
 
@@ -118,17 +109,17 @@ div6.append(div6Box1, div6Box2, div6Box3);
 //add cart button
 
 var cartValue = 1;
+
+
 div6Box1.addEventListener('click', minusProduct);
 
 div6Box2.textContent = cartValue;
 function minusProduct() {
     cartValue--;
     div6Box2.textContent = cartValue;
-    // console.log(cartValue)
-    // if(cartValue == 0) {
-    //     console.log(arr.pop(ind));
-    // }
-
+    if(cartValue == 0) {
+        emptyCart(arr.splice(ind, 1));
+    } 
 }
 
 div6Box3.addEventListener('click', plusProduct);
@@ -137,12 +128,19 @@ function plusProduct() {
     cartValue++;
     // console.log(cartValue);
     div6Box2.textContent = cartValue;
-    // console.log(cartValue)
+    if(cartValue > 1) {
+        sum += Number(elm.currentPrice)
+    }
 }
 
-console.log(cartValue)
 })
 }
+
+function emptyCart (arr) {
+    document.querySelector('.box2').innerHTML = '';
+    addingData(arr)
+}
+
 
 let save = sum - oldSum;
 //total
