@@ -59,6 +59,10 @@ section {
     font-weight: 100;
 }
 
+i {
+    cursor: pointer;
+}
+
 #cart-img {
     font-size: 150px;
     margin-top: 50px;
@@ -251,4 +255,9 @@ span {
 
 .div5 {
     text-decoration-line: line-through;
+}
+
+
+.display {
+    display: none;
 }

@@ -33,8 +33,7 @@ if(arr = []) {
     
 }
 
-let sum = 0;
-let oldSum = 0;
+
      if(arr.length > 0) {
 
     var disable = document.querySelector('#cart-img');
@@ -53,11 +52,21 @@ console.log(arr);
 
 function addingData() {
 console.log(arr)
+let sum = 0;
+let oldSum = 0;
 arr.map(function(elm, ind) {
 
     sum += Number(elm.currentPrice);
     oldSum += Number(elm.oldPrice);
-
+    document.querySelector('.savings').textContent = '₹'+' '+(sum - oldSum);
+    document.querySelector('.totalPrice').textContent = '₹'+' '+sum;
+    if(sum > 200) {
+        document.querySelector('.shipping').textContent = '₹'+' '+'120';
+        document.querySelector('.totalPrice2').textContent = '₹'+' '+(120+sum);
+    } else if(sum > 700) {
+        document.querySelector('.shipping').textContent = '₹'+' '+'43';
+        document.querySelector('.totalPrice2').textContent = '₹'+' '+(43+sum);
+    } 
 var section2 = document.createElement('section');
 section2.setAttribute('id', 'product');
 var div1 = document.createElement('div');
@@ -118,8 +127,10 @@ function minusProduct() {
     div6Box2.textContent = cartValue;
     if(cartValue == 0) {
         emptyCart(arr.splice(ind, 1));
-        sum = 0;
-       oldSum = 0;
+        sum = sum - Number(elm.currentPrice);
+        oldSum = oldSum - Number(elm.oldPrice);
+       document.querySelector('.savings').textContent = '₹'+' '+(sum - oldSum);
+       document.querySelector('.totalPrice').textContent = '₹'+' '+sum;
     } 
 }
 
@@ -129,11 +140,21 @@ div6Box3.addEventListener('click', plusProduct);
 
 function plusProduct() {
     cartValue++;
-//     // console.log(cartValue);
     div6Box2.textContent = cartValue;
-//     if(cartValue > 1) {
-//         sum += Number(elm.currentPrice)
-//     }
+
+    if(cartValue > 1) {
+        sum += Number(elm.currentPrice);
+        oldSum += Number(elm.oldPrice);
+        document.querySelector('.savings').textContent = '₹'+' '+(sum - oldSum);
+        document.querySelector('.totalPrice').textContent = '₹'+' '+sum;
+        if(sum > 200) {
+            document.querySelector('.shipping').textContent = '₹'+' '+'120';
+            document.querySelector('.totalPrice2').textContent = '₹'+' '+(120+sum);
+        } else if(sum > 700) {
+            document.querySelector('.shipping').textContent = '₹'+' '+'43';
+            document.querySelector('.totalPrice2').textContent = '₹'+' '+(43+sum);
+        } 
+    } 
 }
 
 })
@@ -147,27 +168,20 @@ function emptyCart (arr) {
     addingData(arr);
     // console.log(arr);
     // console.log(sum, oldSum)
-    
-    save = sum - oldSum;
-    console.log(sum, save)
-
-    document.querySelector('.savings').textContent = '₹'+' '+save;
-    document.querySelector('.totalPrice').textContent = '₹'+' '+sum;
 }
 
 
 
 //total
 
-document.querySelector('.savings').textContent = '₹'+' '+save;
-document.querySelector('.totalPrice').textContent = '₹'+' '+sum;
+// document.querySelector('.savings').textContent = '₹'+' '+save;
+// document.querySelector('.totalPrice').textContent = '₹'+' '+sum;
 //total end
-if(sum > 200) {
-    document.querySelector('.shipping').textContent = '₹'+' '+'120';
-    document.querySelector('.totalPrice2').textContent = '₹'+' '+(120+sum);
-} else if(sum > 700) {
-    document.querySelector('.shipping').textContent = '₹'+' '+'43';
-    document.querySelector('.totalPrice2').textContent = '₹'+' '+(43+sum);
-} 
 
+}
+
+document.querySelector('#cross').addEventListener('click', crossDis);
+
+function crossDis() {
+    document.querySelector('.fixed').classList.add('display')
 }
