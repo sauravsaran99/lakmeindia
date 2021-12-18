@@ -91,13 +91,6 @@
     cursor: pointer;
 }
 
-.footer-top-bar {
-    border: 1px solid red;
-    background-color: white;
-    height: 120px;
-    width: 100%;
-}
-
 .footer-bottom {
     height: 603px;
     width: 100%;
