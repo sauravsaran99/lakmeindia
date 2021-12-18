@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon img/favicon-16x16.png">
+    <link rel="manifest" href="favicon img/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="stylesheet" href="payments.css">
+    <title>Information - Lakme - Checkout</title>
+</head>
+
+<body>
+    <div id="container">
+        <div id="nav">
+            <div class="image">
+                <div class="image_position"><img src="https://cdn.shopify.com/s/files/1/0014/3514/0183/files/logo_160x_40306a28-2ca3-4d62-8c75-3acbaea0be01.png?208425" alt=""></div>
+            </div>
+        </div>
+        <div id="content">
+            <div id="paymentDiv">
+                <header>
+                    <span id="headSpan1"> Information</span> <span id="headSpan2"> &gt; Payment</span>
+                </header>
+                <div>
+                    <h2>Contact information</h2>
+                    <div id="userInfo" class="field">
+                        <input id="email" class="inputs" type="text" placeholder="Email ID">
+                    </div>
+                    <div id="checkbox_input">
+                        <input id="box" type="checkbox">
+                        <label>Email me with news and offers</label>
+                    </div>
+                </div>
+                <div id="mainContent">
+                    <h2>Shipping address</h2>
+                    <div id="pincode" class="field">
+                        <h3></h3>
+                        <input id="pin" class="inputs" type="number" onclick="showAlert()" placeholder="PIN code">
+                    </div>
+                    <div id="regionDiv" class="field">
+                        <p id="region">Country/region</p>
+                        <select id="country" class="inputs">
+                            <option value="India">India</option>
+                        </select>
+                    </div>
+
+                    <div class="field names">
+                        <div id="first">
+                            <input id="firstName" class="inputs" type="text" placeholder="First name">
+                        </div>
+                        <div id="second">
+                            <input id="lastName" class="inputs" type="text" placeholder="Last name">
+                        </div>
+
+                    </div>
+                    <div id="addressDiv" class="field">
+                        <h3></h3>
+                        <input id="address" class="inputs" type="text" onclick="showAlert()" placeholder="Address">
+                    </div>
+                    <div id="cityState" class="field names">
+                        <div id="cityDiv">
+                            <input id="city" class="inputs" type="text" placeholder="City name">
+                        </div>
+                        <div id="stateDiv">
+                            <select id="state" class="inputs" type="text" placeholder="State"> 
+                                <option value="">State</option>
+                                <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+                                <option value="Andhra Pradesh">Andhra Pradesh</option>
+                                <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                                <option value="Assam">Assam</option>
+                                <option value="Bihar">Bihar</option>
+                                <option value="Chandigarh">Chandigarh</option>
+                                <option value="Chhattisgarh">Chhattisgarh</option>
+                                <option value="Dadra and Nagar Haveli">Dadra and Nagar Haveli</option>
+                                <option value="Daman and Diu">Daman and Diu</option>
+                                <option value="Delhi">Delhi</option>
+                                <option value="Goa">Goa</option>
+                                <option value="Gujarat">Gujarat</option>
+                                <option value="Haryana">Haryana</option>
+                                <option value="Himachal Pradesh">Himachal Pradesh</option>
+                                <option value="Jammu and Kashmir">Jammu and Kashmir</option>
+                                <option value="Jharkhand">Jharkhand</option>
+                                <option value="Karnataka">Karnataka</option>
+                                <option value="Kerala">Kerala</option>
+                                <option value="Ladakh">Ladakh</option>
+                                <option value="Lakshadweep">Lakshadweep</option>
+                                <option value="Madhya Pradesh">Madhya Pradesh</option>
+                                <option value="Maharashtra">Maharashtra</option>
+                                <option value="Manipur">Manipur</option>
+                                <option value="Meghalaya">Meghalaya</option>
+                                <option value="Mizoram">Mizoram</option>
+                                <option value="Nagaland">Nagaland</option>
+                                <option value="Odisha">Odisha</option>
+                                <option value="Puducherry">Puducherry</option>
+                                <option value="Punjab">Punjab</option>
+                                <option value="Rajasthan">Rajasthan</option>
+                                <option value="Sikkim">Sikkim</option>
+                                <option value="Tamil Nadu">Tamil Nadu</option>
+                                <option value="Telangana">Telangana</option>
+                                <option value="Tripura">Tripura</option>
+                                <option value="Uttar Pradesh">Uttar Pradesh</option>
+                                <option value="Uttarakhand">Uttarakhand</option>
+                                <option value="West Bengal">West Bengal</option>
+                        
+                            </select>
+                        </div>
+
+                    </div>
+                    <div id="phoneDiv" class="field">
+                        <h3></h3>
+                        <input id="phone" class="inputs" type="text" onclick="showAlert()" placeholder="Phone">
+                    </div>
+                    <div id="checkbox_input">
+                        <input  class = "saveAddress"id="box" type="checkbox">
+                        <label>Save this information for next time</label>
+                    </div>
+                    <br>
+                    <div id="checkbox_input">
+                        <input class="above18" id="box" type="checkbox">
+                        <label>I am above the age of 18.</label>
+                    </div>
+
+                </div>
+                <div id="buttonDiv">
+                    <button id="proceed">Proceed to pay</button>
+                </div>
+                <hr>
+                <footer>
+                    <a href="">Refund policy</a>
+                    <a href="">Shipping policy</a>
+                    <a href="">Privacy policy</a>
+                    <a href="">Terms of service</a>
+                </footer>
+
+            </div>
+            <!-- arbaz started here -->
+
+            <div id="itemsDiv">
+                <div class="order-summary"></div>
+                <div class="discount-box">
+                    <input type="text" placeholder="Gift card or discount code" class="discount-code">
+                    <button class="discount-code-btn" onclick="applyCoupon()">Apply</button>
+                </div>
+                <div class="total-main">
+                    <div class="subtotal">
+                        <table>
+                            <tr>
+                                <th class="table-left">Subtotal</th>
+                                <td class="table-right"><span class="textbold productSubtotal "></span></td>
+                            </tr>
+                            <tr>
+                                <th class="table-left">Shipping</th>
+                                <td class="table-right">Calculeded at next step</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <br>
+                    <div class="total">
+                        <table>
+                            <tr>
+                                <th class="table-left"> <b>Total</b></th>
+                                <td rowspan="2" class="table-right table2-rigth"><span class="textbold">INR <span class="product-total-price"></span></span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th class="table-left tableMargin">Including <a href="" class="texAmount"></a> in taxes</th>
+                            </tr>
+                        </table>
+                        <div class="sale-alert">
+                            <h2 class="h2white">
+                                <strong>Lakmé Glam Squad!</strong><br> Don’t miss your chance to join us and get 2000 loyalty points.
+                            </h2>
+                        </div>
+                        <br><br>
+                        <button class="log-in" onclick="moveLogin()">LOGIN / REGISTER</button>
+                    </div>
+                </div>
+            </div>
+            <!-- arbaz ended here -->
+
+        </div>
+    </div>
+</body>
+
+</html>
+
+<script src = "payments.js"></script>
