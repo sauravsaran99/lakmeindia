@@ -1,0 +1,240 @@
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);    
+    margin-left: 80px;
+    margin-right: 0px;
+}
+.productWrapper{
+    padding: 20px;
+    margin-bottom: 10px;
+
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    
+}
+.borderbtn{
+border:none;
+outline:none;
+background:none;
+}
+.productWrapper>img{
+    margin: 0 auto;
+}
+.grid3{
+    display:none;
+    border:none;
+}
+.slideButton{
+    margin-left: 65px;
+    color: white;
+    background-color: black;
+    border: none;
+    border-radius: 0px;
+    padding: 18px 36px;
+    display: inline-block;
+    font-family: "Lucida Console", Monaco, monospace;
+    font-size: 15px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    /* box-shadow: inset 0 0 0 0 #D80286; */
+    -webkit-transition: ease-out 0.4s;
+    -moz-transition: ease-out 0.4s;
+    transition: ease-out 0.4s;
+    width: 60%;
+}
+.currentPrice{
+    color: #991F53;
+    font-weight: 500;
+}
+.slideRight:hover {
+box-shadow: inset 199px 0 0 0 white;
+color: black;
+border: rgb(49, 49, 49) groove;
+width: 60%;
+
+} 
+
+.productDetail> *{
+margin-top: 10px;
+}
+.productName{
+    color:rgb(70, 70, 70);
+    font-size: 15px;
+}
+
+.productPrice{
+ /* justify-content: center;    */
+ margin-right: auto;
+ margin-left: auto;
+ width: 50%;
+}
+.flexflex{
+    display: flex;
+}
+.productName{
+    width: 300px;
+    text-align: center;
+}
+.centerp{
+width: 50%;
+margin:23px;
+/* width: 300px; */
+}
+.productPrice{
+    /* margin: 0px; */
+    margin: 0;
+    margin-left: 20px;
+}
+
+
+@font-face {
+font-family: "Ssw Fontello";
+src: url("//cdn.shopify.com/s/files/1/0014/3514/0183/t/311/assets/ssw-fontello.woff?v=812898581977146092") format("woff");
+font-weight: 400;
+font-style: normal;
+font-display: fallback;
+}
+img:hover{
+width: 300px;
+}
+#sort::after{
+border: none;
+}
+#sort{
+font-size: 20px;
+border:none;
+background-color: white;
+padding: 14px 2px;
+outline: none;
+scroll-behavior: smooth;
+text-align: right;
+border-left: 1px solid rgb(155, 145, 145);
+/* height:  */
+}
+
+@media screen and (min-width: 0px) and (max-width: 375px) {
+
+	.slideButton {
+    margin-left: 0px;}
+	.grid2, .grid1{ display:none;}
+	
+	
+    .grid-container{
+    /* grid-template-columns: repeat(2, 1fr); */
+    margin:0px;
+    grid-template-columns: repeat(1, 1fr);
+    }
+    .sortMenu{
+        flex-direction: row-reverse;
+    }
+    .productWrapper{
+        margin:0px;
+    }
+    #sort{
+        /* padding: 10px 1px; */
+        /* width:1%; */
+        text-align: left;
+    }
+    /* .sortparent{    
+    margin-left:10%
+    } */
+
+}
+
+@media screen and (min-width: 376px) and (max-width: 768px) {
+
+.grid-container{
+grid-template-columns: repeat(2, 1fr);
+}
+.grid1{
+display:none;
+}
+.bg-white{
+font-size:23px;
+margin-left:10px;}
+
+
+
+.grid3{
+	
+	display:flex;
+    background-image: url("grid1.jpg");
+    background-repeat: no-repeat;
+    background-size:contain;
+    height: 30px; width: 30px;
+    margin-left:10px;
+    outline: none;
+}
+/* .sortparent{    
+margin-left:65%
+} */
+
+}
+
+
+.grid2{
+    background-image: url("grid2.jpg");
+    background-repeat: no-repeat;
+    background-size:contain;
+    height: 30px; width: 30px;
+    margin-left:10px;
+    outline: none;
+    scroll-behavior: smooth;
+    border:none;
+}
+
+.grid1{
+    background-image: url("/home/shantanu/lakmeindia/grid1.jpg");
+    background-repeat: no-repeat;
+    background-size:contain;
+    height: 30px; width: 30px;
+    margin-left:10px;
+    outline: none;
+    scroll-behavior: smooth;
+    
+    border:none;
+
+
+}
+
+.starIcon{
+    
+    margin-left:100px;
+    color:rgb(233, 229, 22) !important;
+    height:30px;
+    width:10px;
+    /* background-color: yellow; */
+}
+.productStar{
+    display:grid;
+    grid-template-columns: repeat(5,20px);
+margin:0px;
+}
+
+.sortMenu{
+    display:flex;
+    /* flex-direction: row; */
+}
+.space{
+    flex-grow:1; 
+    text-align:center;
+}
+
+.sortbtn{
+    border-right: 1px solid rgb(212, 202, 202);
+    /* padding: 10px; */
+    background-color: white;
+    padding: 10px 
+    /* 5px; */
+
+
+    /* border-bottom: 1px solid rgb(223, 29, 29); */
+}
+.sortMenu{
+    border-bottom: 1px solid rgb(202, 194, 194);
+    background-color: white;
+    /* padding: 10px  */
+    /* 5px; */
+
+}

@@ -1,0 +1,264 @@
+/* location css  */
+.locationContact {
+  display: grid;
+  grid-template-rows: 120px;
+  grid-template-columns: repeat(3, 1fr);
+  /* margin-top: 10px; */
+}
+.locationContact > div {
+  border-top: 2px solid rgb(105, 103, 103);
+  text-align: center;
+  line-height: 8px;
+  padding-top: 10px;
+  background-color: rgb(218, 211, 211);
+}
+.line {
+  display: flex;
+  justify-content: center;
+}
+.line > div {
+  height: 75%;
+  /* width: 0px; */
+  border: 1px solid rgb(78, 77, 77);
+}
+/* .footer {
+  display: flex;
+} */
+.flex {
+  display: flex;
+  justify-content: center;
+}
+.circleBorder {
+  margin: 10px;
+  border: 2px solid #991f53;
+  border-radius: 50%;
+  padding: 10px;
+  background: white;
+}
+.fas,
+.far {
+  color: #991f53;
+}
+.location {
+  margin-top: 20px;
+  height: 10px;
+}
+
+.footer {
+  display: grid;
+  grid-template-rows: 100px 600px;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 15px;
+  background-color: rgb(0, 0, 0);
+  grid-template-areas:
+    "I I I I I I I I I I I I"
+    "C C C C C C C C H H N N";
+}
+/* * {
+  margin: 0px;
+} */
+/* .footerContent {
+  margin-top: 50px;
+} */
+.footer > div {
+  /* background-color: rgb(76, 69, 69)rgb(255,255,255); */
+  color: white;
+  /* box-sizing: border-box; */
+}
+.image {
+  grid-area: I;
+  padding-left: 25px;
+  
+  padding-top: 15px;
+}
+.contactUs {
+  grid-area: C;
+  display: flex;
+  flex-direction: column;
+  /* box-sizing: border-box; */
+}
+.us {
+  margin-left: 10px;
+  padding-top: 10px;
+  padding-left: 15px;
+}
+.help {
+  grid-area: H;
+  display: flex;
+}
+.helpNeed {
+  grid-area: N;
+  display: flex;
+}
+.insideImagebox {
+  display: flex;
+  justify-content: start;
+  margin-left: 15px;
+}
+.followLatest {
+  margin-left: 10px;
+  padding-top: 10px;
+}
+.log {
+  display: flex;
+  margin-left: 15px;
+  /* margin-top: 25px; */
+}
+.circleBorder {
+  margin-left: 15px;
+  border-radius: 25px;
+  /* border: 1px solid brown; */
+  padding: 3%;
+  /* padding: 10%; */
+  background: white;
+}
+
+.blue {
+  border: 2px solid rgb(19, 19, 167);
+  color: blue;
+}
+.pink {
+  border: 2px solid pink;
+  color: pink;
+}
+.red {
+  border: 2px solid red;
+  color: red;
+}
+.fab {
+  font-size: 25px;
+  border: none;
+}
+.contactUs > div {
+  width: 100%;
+  height: 100%;
+}
+.aboutUs {
+  width: --moz-fit-content;
+  width: fit-content;
+  padding: 5px;
+  padding-left: 15px;
+  padding-bottom: 16px;
+  margin-left: 10px;
+  line-height: 25px;
+  /* line-height: 18px; */
+}
+
+.contact,
+.helpH2,
+.need,
+.contentH2 {
+  padding-left: 25px;
+}
+.helpP,
+.need2 {
+  margin-left: 25px;
+}
+.help > div {
+  width: 100%;
+  height: 70%;
+}
+.helpNeed > div {
+  width: 100%;
+  height: 70%;
+}
+@media screen and (min-width: 0px) and (max-width: 375px) {
+  .footer {
+    grid-template-rows: 375px;
+    /* grid-template-rows: 355px; */
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 200px 50px 50px 650px 500px;
+    
+    grid-template-areas:
+      "I I I I I I I I I I I I"
+      "H H H H H H H H H H H H"
+      "N N N N N N N N N N N N"
+      "C C C C C C C C C C C C";
+  }
+  #menu{
+    margin-left: 10px !important;
+  }
+  .followLatest {
+    margin-left:-17px;
+  }
+  .helpP, .need2{
+    display: none;
+  }    
+  .insideImagebox {
+    display: flex;
+    flex-direction: column;
+  }
+  .fab {
+    padding: 1px;
+  }
+  .getintouch{
+      width: 150px;
+      color: black;
+      margin-bottom:0px;
+    }
+
+    .margin-right{
+      color: black;
+    }  
+  .margin-left{
+    color: black;
+    margin-top: 10px;
+      margin-left:10px
+  }
+  .aboutUs{
+      margin:10px;
+      text-align: justify;
+  }
+.imageLeft{
+  height:40%; width:55%;
+  margin-left:53px;
+}
+  body{
+    text-align:center;
+      /* margin:0px; */
+      /* position:fixed; */
+  }
+  .log {
+    margin-left: 56px;
+  }
+  .circleBorder {
+    margin-left: 5px;
+  }
+}
+@media screen and (min-width: 376px) and (max-width: 768px) {
+  .footer {
+    grid-template-rows: 120px 250px 550px 500px;
+    grid-template-columns: repeat(12, 1fr);
+
+    grid-template-areas:
+      "I I I I I I I I I I I I"
+      "H H H H H H N N N N N N"
+      "C C C C C C C C C C C C";
+  }
+
+  .aboutUs{
+    margin:10px;
+    text-align: justify;
+}
+
+  .fab {
+    padding: 1px;
+  }
+  .log {
+    margin: 0px;
+    background-size: 1px;
+  }
+  .circleBorder {
+    margin-left: 5px;
+  }
+  .followLatest {
+    font-size: 12px;
+  }
+  .help,
+  .helpNeed {
+    height: 250px;
+  }
+}
+/* .whiteLine {
+  color: white;
+} */
