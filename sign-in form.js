@@ -4,7 +4,6 @@ function goToSignUpPage() {
     window.location.href = "signUp.html";
 }
 
-
 document.querySelector("#home").addEventListener("click", function() {
     window.location.href = "lakmehome.html"
 })

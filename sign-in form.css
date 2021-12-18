@@ -91,12 +91,6 @@
     cursor: pointer;
 }
 
-.footer-bottom {
-    height: 603px;
-    width: 100%;
-    background-color: black;
-}
-
 hr {
     border-top: 0px solid rgba(255, 255, 255, 0.685);
 }
