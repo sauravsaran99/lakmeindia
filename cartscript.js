@@ -33,7 +33,8 @@ if(arr = []) {
     
 }
 
-
+let sum = 0;
+let oldSum = 0;
      if(arr.length > 0) {
 
     var disable = document.querySelector('#cart-img');
@@ -45,13 +46,13 @@ if(arr = []) {
     
 
 
-let sum = 0;
-let oldSum = 0;
+
 
 addingData(arr);
+console.log(arr);
 
 function addingData() {
-
+console.log(arr)
 arr.map(function(elm, ind) {
 
     sum += Number(elm.currentPrice);
@@ -70,14 +71,11 @@ div2.setAttribute('class', 'productbox div2');
 
 var div4 = document.createElement('div');
 div4.setAttribute('class', 'productbox');
-div4.textContent = '₹' + elm.currentPrice
+div4.textContent = '₹' + elm.currentPrice;
 var div5 = document.createElement('div');
 div5.setAttribute('class', 'productbox div5');
-if(elm.oldPrice == null) {
-    div5.textContent = elm.oldPrice;
-} else {
+
     div5.textContent = '₹' + elm.oldPrice;
-}
 
 
 var div6 = document.createElement('div');
@@ -98,12 +96,13 @@ document.querySelector('.box2').append(section2);
     div1.append(imgProduct);
 
 let div6Box1 = document.createElement('div');
+div6Box1.textContent = '-'
 div6Box1.setAttribute('class', 'div6Box1')
 let div6Box2 = document.createElement('div');
 div6Box2.setAttribute('class', 'div6Box2')
 let div6Box3 = document.createElement('div');
+div6Box3.textContent = '+';
 div6Box3.setAttribute('class', 'div6Box3')
-
 div6.append(div6Box1, div6Box2, div6Box3);
 
 //add cart button
@@ -119,34 +118,49 @@ function minusProduct() {
     div6Box2.textContent = cartValue;
     if(cartValue == 0) {
         emptyCart(arr.splice(ind, 1));
+        sum = 0;
+       oldSum = 0;
     } 
 }
+
+// div6.div6Box1.textContent = '+'
 
 div6Box3.addEventListener('click', plusProduct);
 
 function plusProduct() {
     cartValue++;
-    // console.log(cartValue);
+//     // console.log(cartValue);
     div6Box2.textContent = cartValue;
-    if(cartValue > 1) {
-        sum += Number(elm.currentPrice)
-    }
+//     if(cartValue > 1) {
+//         sum += Number(elm.currentPrice)
+//     }
 }
 
 })
 }
 
+
+let save = sum - oldSum;
+
 function emptyCart (arr) {
     document.querySelector('.box2').innerHTML = '';
-    addingData(arr)
+    addingData(arr);
+    // console.log(arr);
+    // console.log(sum, oldSum)
+    
+    save = sum - oldSum;
+    console.log(sum, save)
+
+    document.querySelector('.savings').textContent = '₹'+' '+save;
+    document.querySelector('.totalPrice').textContent = '₹'+' '+sum;
 }
 
 
-let save = sum - oldSum;
-//total
-document.querySelector('.totalPrice').textContent = '₹'+' '+sum;
-document.querySelector('.savings').textContent = '₹'+' '+save;
 
+//total
+
+document.querySelector('.savings').textContent = '₹'+' '+save;
+document.querySelector('.totalPrice').textContent = '₹'+' '+sum;
 //total end
 if(sum > 200) {
     document.querySelector('.shipping').textContent = '₹'+' '+'120';

@@ -190,7 +190,8 @@ span {
     width: 30px;
     height: 100%;
     margin-left: 1px;
-    background-color: tomato;
+    /* background-color: tomato; */
+    cursor: pointer;
 }
 
 .div1 {
