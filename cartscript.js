@@ -23,7 +23,11 @@ let oldArr = [{"image": "https://cdn.shopify.com/s/files/1/0014/3514/0183/produc
 
 let arr = JSON.parse(localStorage.getItem('data'));
 
+document.querySelector('#cross').addEventListener('click', crossDis);
 
+function crossDis() {
+    document.querySelector('.fixed').classList.add('display')
+}
 
 
 if(arr = []) {
@@ -178,10 +182,4 @@ function emptyCart (arr) {
 // document.querySelector('.totalPrice').textContent = '₹'+' '+sum;
 //total end
 
-}
-
-document.querySelector('#cross').addEventListener('click', crossDis);
-
-function crossDis() {
-    document.querySelector('.fixed').classList.add('display')
 }
