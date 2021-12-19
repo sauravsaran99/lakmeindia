@@ -9,6 +9,8 @@
 .fixed {
     right: 0;
     position: fixed;
+    z-index: 100;
+    background-color: #fff;
 }
 
 section {
