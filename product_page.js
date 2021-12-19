@@ -1,6 +1,6 @@
 var productArr=[
-{"id": 1, "image": "https://cdn.shopify.com/s/files/1/0014/3514/0183/products/27148_S9-8901030741845_70f974c2-d8d8-43b8-b1c2-ab3f91969d4e_300x.jpg?v=1617882362", "image_hover": "https://cdn.shopify.com/s/files/1/0014/3514/0183/products/Hero_Bundle-_1_1_300x.jpg?v=1617893040", "name": "LAKM\u00c9 BLUSH AND GLOW SHEET MASK VALUE SET OF 10", "currentPrice": "599", "oldPrice": "1,000", "discountPrice": "40% OFF", "isSoldOut": null, "link": "https://lakmeindia.com/collections/bestsellers/products/lakme-blush-and-glow-sheet-mask-value-set-10"},
-{"id": 2, "image": "https://cdn.shopify.com/s/files/1/0014/3514/0183/products/1000x1000-swatch_1_300x.jpg?v=1620802298", "image_hover": "https://cdn.shopify.com/s/files/1/0014/3514/0183/products/1000x1000-hero_1_300x.jpg?v=1620801652", "name": "LAKM\u00c9 9TO5 VITAMIN C + SKINCARE VALUE SET", "currentPrice": "999", "oldPrice": "1,297", "discountPrice": "23% OFF", "isSoldOut": null, "link": "https://lakmeindia.com/collections/bestsellers/products/lakme-9to5-vitamin-c-skincare-combo"},
+{"id": 1, "image": "https://cdn.shopify.com/s/files/1/0014/3514/0183/products/27148_S9-8901030741845_70f974c2-d8d8-43b8-b1c2-ab3f91969d4e_300x.jpg?v=1617882362", "image_hover": "https://cdn.shopify.com/s/files/1/0014/3514/0183/products/Hero_Bundle-_1_1_300x.jpg?v=1617893040", "name": "LAKM\u00c9 BLUSH AND GLOW SHEET MASK VALUE SET OF 10", "currentPrice": "599", "oldPrice": "1000", "discountPrice": "40% OFF", "isSoldOut": null, "link": "https://lakmeindia.com/collections/bestsellers/products/lakme-blush-and-glow-sheet-mask-value-set-10"},
+{"id": 2, "image": "https://cdn.shopify.com/s/files/1/0014/3514/0183/products/1000x1000-swatch_1_300x.jpg?v=1620802298", "image_hover": "https://cdn.shopify.com/s/files/1/0014/3514/0183/products/1000x1000-hero_1_300x.jpg?v=1620801652", "name": "LAKM\u00c9 9TO5 VITAMIN C + SKINCARE VALUE SET", "currentPrice": "999", "oldPrice": "1297", "discountPrice": "23% OFF", "isSoldOut": null, "link": "https://lakmeindia.com/collections/bestsellers/products/lakme-9to5-vitamin-c-skincare-combo"},
 {"id": 3, "image": "https://cdn.shopify.com/s/files/1/0014/3514/0183/products/img2_4_1_300x.jpg?v=1620910674", "image_hover": "https://cdn.shopify.com/s/files/1/0014/3514/0183/products/img1_3_1_300x.jpg?v=1620910668", "name": "LAKM\u00c9 GREEN TEA ESSENTIALS KIT", "currentPrice": "699", "oldPrice": "847", "discountPrice": "17% OFF", "isSoldOut": null, "link": "https://lakmeindia.com/collections/bestsellers/products/green-tea-essentials-kit"},
 {"id": 4, "image": "https://cdn.shopify.com/s/files/1/0014/3514/0183/products/24968_H2-8901030816055_300x.jpg?v=1621002851", "image_hover": "https://cdn.shopify.com/s/files/1/0014/3514/0183/products/Lakme9to5Primer_MatteLipColorRedLetter_300x.jpg?v=1598243140", "name": "Lakm\u00e9 9 to 5 Primer + Matte Lip Color", "currentPrice": "300", "oldPrice": "500", "discountPrice": "40% OFF", "isSoldOut": null, "link": "https://lakmeindia.com/collections/bestsellers/products/lakme-9to5-primer-matte-lipstick"},
 {"id": 5, "image": "https://cdn.shopify.com/s/files/1/0014/3514/0183/products/24544_S5-8901030758850_47d81970-d9f4-480a-9ad0-2182d5a263f5_300x.jpg?v=1591863174", "image_hover": "https://cdn.shopify.com/s/files/1/0014/3514/0183/products/24544_H-8901030758850_3e09b888-1276-44a2-9665-fa293cbd5d3_300x.jpg?v=1601470864", "name": "Lakm\u00e9 Forever Matte Liquid Lip Color", "currentPrice": "295", "oldPrice": null, "discountPrice": null, "isSoldOut": null, "link": "https://lakmeindia.com/collections/bestsellers/products/lakme-forever-matte-liquid-lip-colour"},
@@ -181,7 +181,10 @@ var productArr=[
 arr = productArr;
 showdata(arr);
 
-
+document.querySelector('.butbrown').addEventListener('click', callCart);
+function callCart () {
+    window.location.href = 'payments.html'
+}
 function showdata(arr) {
 
 // document.querySelector(".grid-container").innertext= "";

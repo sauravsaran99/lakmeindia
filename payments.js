@@ -132,7 +132,7 @@ function applyCoupon () {
 
 }
 function moveLogin () {
-  window.location.href = "signIn.html";
+  window.location.href = "signin_form.html";
 }
 
 
