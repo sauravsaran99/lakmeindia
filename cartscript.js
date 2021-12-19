@@ -130,9 +130,9 @@ div6Box1.addEventListener('click', minusProduct);
 
 div6Box2.textContent = cartValue;
 function minusProduct() {
-    cartValue--;
+    cartValue--
     div6Box2.textContent = cartValue;
-    if(cartValue == 0) {
+    if(cartValue >= 0) {
         emptyCart(arr.splice(ind, 1));
         sum = sum - Number(elm.currentPrice);
         oldSum = oldSum - Number(elm.oldPrice);
