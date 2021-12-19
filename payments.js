@@ -135,4 +135,8 @@ function moveLogin () {
   window.location.href = "signin_form.html";
 }
 
+document.querySelector('#proceed').addEventListener('click', function () {
+  window.location.href = 'thankyou.html'
+})
+
 
