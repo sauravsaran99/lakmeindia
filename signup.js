@@ -6,8 +6,9 @@ document.querySelector("button").addEventListener("click", signUp)
         var last = document.querySelector("#lastName").value;
         var email = document.querySelector("#email").value;
         var password = document.querySelector("#pass").value;
+        var checkBox =  document.getElementById("checkmark").checked
 
-        if(first == "" || last == "" || email == "" || password ==""){
+        if(first == "" || last == "" || email == "" || password =="" || checkBox == false){
             alert("Please enter all data")
         }else{
             var obj = {
