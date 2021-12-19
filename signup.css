@@ -110,6 +110,19 @@ nav {
         letter-spacing: .1em;
     }
 
-    @media only screen and (min-width:0px) and (max-width:375px) {
-                  
-    }
+    @media only screen and (min-width:0px) and (max-width:449px) {
+        .bgimg-login-layout {
+            width :100%;
+            min-height: 850px;
+        }
+        #content {
+            height:auto;
+            width:90%;
+        }
+         #inputs,#firstName, #lastName, #email, #pass, button {
+            width:100%;
+         } 
+         button {
+             height:45px;
+         }   
+    } 
