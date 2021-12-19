@@ -9,6 +9,12 @@
 .fixed {
     right: 0;
     position: fixed;
+    background-color: #fff;
+    z-index: 100;
+    display: none;
+}
+.displays {
+    display: block;
 }
 
 section {
