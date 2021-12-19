@@ -13,9 +13,9 @@ document.querySelector(".login-btn").addEventListener("click", signInBtn)
 document.querySelector("#home").addEventListener("click", function() {
     window.location.href = "index.html"
 })
-document.querySelector("#pro").addEventListener("click", function() {
-    window.location.href = "product_page.html"
-})
+// document.querySelector("#pro").addEventListener("click", function() {
+//     window.location.href = "product_page.html"
+// })
 document.querySelector("#signin").addEventListener("click", function() {
         window.location.href = "signin_form.html"
     })
@@ -37,11 +37,16 @@ function signInBtn(event) {
 
     var email = document.querySelector('#inputEmail').value;
     var password = document.querySelector("#inputPasswd").value;
+    var count = 0;
 
-    for (var i = 0; i < userDataBase.length; i++) {
-        if (userDataBase[i].email == email && userDataBase[i].password == password) {
+    for (var i = 0; i < userData.length; i++) {
+        if (userData[i].email == email && userData[i].password == password) {
             window.location.href = "index.html";
+            count++;
         }
+    }
+    if(count == 0){
+        alert("Please Check your email and password")
     }
 }
 
