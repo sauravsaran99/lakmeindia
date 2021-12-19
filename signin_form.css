@@ -1,0 +1,148 @@
+* {
+    margin: 0px;
+    box-sizing: border-box !important;
+    font-family: Futura, sans-serif;
+}
+
+.blank-bg {
+    height: 50px;
+    width: 100px;
+    background-color: transparent;
+}
+
+.bgimg-login-layout {
+    background-image: url(https://cdn.shopify.com/s/files/1/0014/3514/0183/files/bg_49938515-20d6-4329-9ad5-26cccec5bd8e.jpg?v=1631711342);
+    width: 100%;
+    height: 85vh;
+    /* height: 550px; */
+    background-repeat: no-repeat;
+    background-color: black;
+    background-size: 100% 100%;
+}
+
+.boxOf_log_form {
+    height: 435px;
+    width: 400px;
+    margin: auto;
+    text-align: center;
+    padding: 10px 12px;
+    line-height: 22px;
+    background-color: rgba(15, 15, 15, 0.445);
+}
+
+.signHeading {
+    font-family: "DIN Neuzeit Grotesk", sans-serif;
+    font-size: 22px;
+    color: white;
+    font-weight: 200;
+    letter-spacing: 3px;
+    padding-top: 8px;
+}
+
+.signPage-pragraph {
+    font-family: Futura, sans-serif;
+    font-size: 14px;
+    color: white;
+    margin-top: 26px;
+    line-height: 24px;
+}
+
+.signPage-pragraph:nth-child(3) {
+    margin-top: 1px;
+}
+
+.signPage-pragraph:nth-child(5) {
+    margin: 10px 0 0;
+}
+
+.signPage-pragraph:nth-child(6) {
+    margin: 10px 0 0;
+}
+
+#inputEmail {
+    height: 45px;
+    width: 374px;
+    padding: 12px 14px;
+    margin: 20px 0 0;
+    font-size: 15px;
+    color: #333;
+}
+
+.login-btn {
+    height: 45px;
+    width: 374px;
+    background-color: #000000;
+    margin: 20px 0 0;
+    padding: 14px 28px;
+    border: 0px;
+    color: white;
+    letter-spacing: 3px;
+    cursor: pointer;
+}
+
+#signUp-btn {
+    height: 45px;
+    width: 374px;
+    background-color: #000000;
+    margin: 20px 0 0;
+    padding: 14px 28px;
+    border: 0px;
+    color: white;
+    letter-spacing: 3px;
+    cursor: pointer;
+}
+
+.footer-bottom {
+    height: 603px;
+    width: 100%;
+    background-color: black;
+}
+
+hr {
+    border-top: 0px solid rgba(255, 255, 255, 0.685);
+}
+
+.lastBlank-footer {
+    height: 41px;
+    width: 100%;
+    background-color: black;
+}
+
+#inputPasswd {
+    display: none;
+    height: 45px;
+    width: 374px;
+    padding: 12px 14px;
+    margin: 14px 0 -22px;
+    font-size: 15px;
+    color: #333;
+}
+
+button:hover {
+    background-color: rgba(8, 8, 8, 0.726);
+}
+
+@media only screen and (min-width: 0px) and (max-width: 449px) {
+    .bgimg-login-layout {
+        width: 100%;
+        min-height: 850px;
+    }
+    .boxOf_log_form {
+        height: 56%;
+        width: 90%;
+    }
+    #inputEmail {
+        width: 100%;
+    }
+    #inputPasswd {
+        width: 100%;
+    }
+    .login-btn {
+        height: 45px;
+        width: 100%;
+    }
+    #signUp-btn {
+        height: 45px;
+        width: 100%;
+    }
+}

@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="signin_form.css">
+    <link rel="stylesheet" href="signin_form_nav.css">
+    <link rel="stylesheet" href="signin_footer.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Noto+Sans+Display:wght@200;300;400&family=Rubik:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="cart.css">
+    <!-- favicon start here -->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon img/favicon-16x16.png">
+    <link rel="manifest" href="favicon img/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <!-- favicon end here -->
+    <title>Account - Lakme</title>
+
+    <style>
+
+        .need2, .helpP{
+        line-height:28px
+        }
+        #menu{
+            margin-left:10px;
+        }
+        .fasmenu{
+            color: white;
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <!-- cart start -->
+
+    <div class="fixed">
+        <section>
+            <div class="box1">
+                <p class="cart">CART</p>
+                <i class="fas fa-times" id="cross"></i>
+            </div>
+    
+            <div class="box2">
+                <i class="fas fa-shopping-bag" id="cart-img"></i>
+                <p class="belowCart">Your bag is empty</p>
+            </div>
+        </section>
+    
+        <div class="box3 notshow">
+    
+            <!-- <div class="disable"> -->
+            <div class="h3class">
+                <h3>Payment Details</h3>
+            </div>
+    
+            <div class="payment">
+                <div class="priceBox"><b>Bag Total</b></div>
+                <div class="priceBox totalPrice"><b></b></div>
+                <div class="priceBox">Savings</div>
+                <div class="priceBox savings"></div>
+                <div class="priceBox">Shipping Charge</div>
+                <div class="priceBox shipping"></div>
+                <div class="priceBox spend"><span>Spend $50 more and get free shipping!</span></div>
+                <div class="priceBox offer"><span>$180.00 Away to get free Dhaaga clutch product</span></div>
+                <div class="priceBox grid-but butwhite totalPrice2"></div>
+                <div class="priceBox grid-but butbrown">CHECKOUT></div>
+            </div>
+        <!-- </div> -->
+        </div>
+    </div>
+    <!-- cart end -->
+
+    <div id="container">
+        <!-- nav start here -->
+        <div id="nav">
+            <div id="head">
+                <div id="menu"><i class=" fasmenu fas fa-bars"></i></div>
+                <div id="lakme">
+                    <img src="https://cdn.shopify.com/s/files/1/0014/3514/0183/files/logo_37106f0a-2cdf-4ed0-9a97-33ad520b6682_155x.png?v=1599222024
+                    " alt="">
+                </div>
+                <div id="middle">
+                    <div id="home">HOME</div>
+                    <div>MAKE UP</div>
+                    <div>SKIN</div>
+                    <div>TRENDING</div>
+                    <div>SALE</div>
+                    <div>VALE SETS & COMBOS</div>
+                    <div>FIND YOUR MATCH</div>
+
+                    <div>LAKME SKIN PRO</div>
+                    <div>MORE</div>
+                </div>
+                <div id="icon">
+
+                    <div><i class="fal fa-heart"></i></div>
+
+                    <div id="signin"><i class="fal fa-user"></i></div>
+                    <div><i class="fal fa-search"></i></div>
+                    <div id="cart"><i class="fal fa-shopping-bag"></i></div>
+                </div>
+                <div id="small" class="sm-icon">
+                    <div id="signin"><i class="fal fa-user"></i></div>
+                    <div id="cart"><i class="fal fa-shopping-bag"></i></div>
+                </div>
+            </div>
+        </div>
+        <!-- nav end here -->
+
+
+        <!-- content body start here  -->
+        <div class="bgimg-login-layout">
+            <div class="blank-bg"></div>
+            <div class="boxOf_log_form" id="usingJsheight">
+
+                <h4 class="signHeading">SIGN IN</h4>
+
+                <p class="signPage-pragraph"> Quickly find your favorite products, saved addresses and payment methods! </p>
+                <p class="signPage-pragraph">Register to Join the Glam Squad and earn 2000 glam points</p>
+
+                <form id="form">
+                    <input type="email" id="inputEmail" onclick="clickForPass()" placeholder="Enter Email" required>
+                    <input type="password" id="inputPasswd" placeholder="Enter Password" required>
+                    <br>
+                    <button class="login-btn">SIGN IN</button>
+                </form>
+
+                <p class="signPage-pragraph">Refer and Earn Glam Points, Learn More </p>
+                <p class="signPage-pragraph"> Not a Member?</p>
+
+                <button id="signUp-btn" onclick="goToSignUpPage()">SIGN UP</button>
+
+            </div>
+        </div>
+        <!-- content body end here  -->
+
+        <!-- second last footer start here -->
+        <div class="locationContact">
+            <div class="store flex">
+                <div>
+                    <h4 class="margin-left">STORE</h4>
+                    <h4 class="margin-left">LOCATOR</h4>
+                </div>
+                <div class="circleBorder location">
+                    <i class="fas fa-location-arrow"></i>
+
+                </div>
+            </div>
+            <div class="line">
+                <div></div>
+            </div>
+            <div>
+                <h4 class="getintouch">GET ON TOUCH</h4>
+                <div class="flex">
+                    <div class="circleBorder">
+                        <i class="fas fa-phone-alt"></i>
+                    </div>
+                    <div class="circleBorder"><i class="far fa-comments"></i></div>
+                    <div class="circleBorder"><i class="fas fa-envelope-open"></i></div>
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="footer">
+            <!-- <div class = "footerContent"> -->
+            <div class="image">
+                <div class="insideImagebox flex ">
+                    <img class="imageLeft" src="https://cdn.shopify.com/s/files/1/0014/3514/0183/files/logo_155x_2x_36903a57-eff3-46a2-b04e-c7a9465ece1d_medium.png?v=1632222917" alt="">
+                    <p class="followLatest">FOLLOW LATEST UPDATES & NEW LAUNCHES</p>
+                    <div class="log">
+                        <div class="circleBorder blue"><i class="fab blue fa-facebook"></i></div>
+                        <div class="circleBorder pink"><i class="fab pink fa-instagram"></i></div>
+                        <div class="circleBorder red"><i class="fab red fa-youtube"></i></div>
+                    </div>
+                </div>
+            </div>
+            <div class="contactUs">
+                <div class="contactUs1">
+                    <h2 class="contact">CONTACT US</h2>
+                    <p class="us">support@lakmeindia.com</p>
+                    <p class="us">1800-313-9293</p>
+                    <p class="us">Mon - Sat , 9 am to 7 pm</p>
+                </div>
+                <div class="content">
+                    <h2 class="contentH2">ABOUT US</h2>
+                    <p class="aboutUs">The contemporary Indian beauty expert - Lakmé continuously innovates to offer a wide range of high performance and world class cosmetics and skincare products that have earned recognition from the People for the Ethical Treatment of
+                        Animals (PETA). We, at Lakme, combine international cosmetic technology with an in-depth understanding of the Indian woman’s needs and offer a comprehensive beauty experience to our customers through products that are ideal for
+                        a variety of Indian skin tones. Lakmé was the country's first cosmetic brand to introduce makeup to Indian women and takes pride in being the expert on Indian Beauty for over 50 years. We also take immense pride in being a compassionate
+                        beauty brand which is why we do not believe in or support testing on animals. Our bond with beauty and fashion goes beyond skincare & makeup hence it is manifested through the renowned Lakmé Fashion Week, which is now the largest
+                        fashion event of its kind in the country that celebrates the beauty of fashion</p>
+                </div>
+            </div>
+            <div class="help">
+                <div>
+                    <h2 class="helpH2">HELP</h2>
+                    <p class="helpP">Beauty Consultation</p>
+                    <p class="helpP">FAQ</p>
+                    <p class="helpP">Contact Us</p>
+                    <p class="helpP">Track Order</p>
+                    <p class="helpP">Shipping</p>
+                    <p class="helpP">Terms & Conditions</p>
+                </div>
+            </div>
+            <div class="helpNeed">
+                <div>
+                    <h2 class="need">NEED HELP?</h2>
+                    <p class="need2">Email Us:</p>
+                    <p class="need2">support@lakmeindia.com</p>
+                    <p class="need2">Call Us:</p>
+                    <p class="need2">1800-313-9293</p>
+                    <p class="need2">Working Timing:</p>
+                    <p class="need2">Mon - Sat , 9 am to 7 pm</p>
+                </div>
+            </div>
+
+            <!-- </div> -->
+        </div>
+        <!-- main footer end here  -->
+        <hr>
+        <div class="lastBlank-footer"></div>
+    </div>
+
+    <script src="cartscript.js"></script>
+    <script src="signin_form.js"></script>
+    <script src="product_page_navbar.js"></script>
+
+</body>
+
+</html>

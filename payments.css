@@ -1,0 +1,307 @@
+body {
+    margin-top: 0;
+}
+
+#container {
+    margin: 0px;
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    grid-template-rows: 149.19px 897.16px;
+}
+
+.image {
+    margin: 0px;
+    height: 200px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("https://cdn.shopify.com/s/files/1/0014/3514/0183/files/Banner_2a48797a-862f-4734-aaae-21c8cb559b2c.jpg?208425");
+}
+
+.productItem{
+    display: flex;
+    margin-bottom: 10px;
+}
+.productImage{
+    height: 50px; width: 50px;
+    margin-right: 10px;
+}
+.productName{
+    font-weight: 600;
+}
+
+.image_position {
+    margin-left: 100px;
+}
+
+#content {
+    /* border: 1px solid green; */
+    display: flex;
+    padding: 0px 115px;
+    color: #545454;
+    font-size: 14px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    line-height: 1.3em;
+    margin-top: 50px;
+}
+
+#paymentDiv {
+    width: 56%;
+    /* border: 1px solid red; */
+    padding: 28px 59.281px 0px 0px;
+}
+
+#itemsDiv {
+    width: 43%;
+    border: 1px solid gray;
+    padding: 28px 0px 0px 39.5156px;
+}
+
+#headSpan1 {
+    font-size: 12px;
+    color: #333333;
+}
+
+#headSpan2 {
+    font-size: 12px;
+    color: #737373;
+}
+
+h2,
+#pin {
+    display: block;
+    font-size: 18px;
+    font-weight: normal;
+    color: #333333;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+#userPhoto {
+    width: 50px;
+    height: 50px;
+    border: 1px solid purple;
+    margin: 0px 14px 0px 0px;
+    border-radius: 8px;
+}
+
+#userInfo {
+    content: "";
+    display: flex
+}
+
+p {
+    padding: 3.5px 0px 0px;
+    margin: 0px;
+    margin-bottom: 30px;
+}
+
+#checkbox_input {
+    width: 28.5px;
+    height: 18.19px;
+    display: table-cell;
+    padding-right: 0.75em;
+    white-space: nowrap;
+}
+
+.field {
+    width: 100%;
+    float: left;
+    /* padding: 0.4285714286em; */
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    /* border: 1px solid gray; */
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.inputs {
+    width: 100%;
+    float: left;
+    border-radius: 5px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 16px 14px;
+    margin-top: 0px;
+    cursor: text;
+    border: 1px solid grey;
+}
+
+#pin {
+    font-size: 18px;
+    height: 90%;
+    margin: 0px;
+    text-align: left;
+}
+
+#region {
+    margin-bottom: 0px;
+    padding-left: 14px;
+}
+
+#country {
+    margin: 0px;
+    text-align: left;
+    padding: 0px 14px 0px;
+    border: 1px solid transparent;
+}
+
+h3 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.names {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+}
+
+#city {
+    margin-bottom: 0px;
+}
+
+button {
+    padding: 19.6px 23.8px;
+    background-color: #454545;
+    color: white;
+    margin-left: 75%;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 0px;
+}
+
+#buttonDiv {
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+#box {
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    color: #a17c5e;
+    font-size: 12px;
+}
+
+#regionDiv {
+    border: 1px solid gray
+}
+
+
+/* arbaz part start */
+
+.order-summary {
+    height: 252px;
+    /* width: 418px; */
+    width: 70%;
+    overflow-y: auto;
+    border-bottom: 1px solid grey;
+}
+
+.discount-box {
+    padding: 21px 0;
+    border-bottom: 1px solid grey;
+    width: 70%;
+}
+
+.discount-code {
+    padding: 13px 12px;
+    width: 67%;
+    border-radius: 5px;
+    border: 1px solid grey;
+}
+
+.discount-code-btn {
+    padding: 16px 30px;
+    margin-left: 13px;
+    font-weight: 700;
+    color: white;
+    background: hsl(0deg 0% 78%);
+    border: 0px;
+    border-radius: 8px;
+}
+
+.table-left {
+    padding: 15px 0 0;
+    width: 65%;
+    margin-right: 5px;
+    text-align: left;
+    font-weight: 500;
+    margin-bottom: 0px;
+}
+
+.table-right {
+    padding: 15px 0 0;
+    width: 48%;
+    text-align: right;
+}
+
+.textbold {
+    font-weight: 600;
+    color: rgb(143, 143, 143);
+}
+
+.tableMargin {
+    padding: 0px 0px 15px;
+    font-size: 13px;
+}
+
+b {
+    font-size: 18px;
+    font-weight: 400;
+    color: black;
+}
+
+.product-total-price {
+    color: black;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.table2-rigth {
+    width: 145px;
+}
+
+.total {
+    padding: 5px 0 0;
+    border-top: 1px solid grey;
+    width: 70%;
+}
+
+#itemsDiv {
+    background-color: rgb(250, 250, 250);
+    border: 0px;
+}
+
+.sale-alert {
+    background-color: hsl(334deg 66% 36%);
+    border-radius: 5px;
+}
+
+.h2white {
+    color: white;
+    padding: 10px 8px;
+    margin: 0 0 5px;
+    line-height: 22px;
+}
+
+.log-in {
+    background-color: white;
+    color: hsl(334deg 66% 36%);
+    padding: 10px 18px;
+    border: 1px solid hsl(334deg 66% 36%);
+    font-weight: 600;
+    border-radius: 3px;
+    letter-spacing: 2px;
+    margin-left: 0px;
+}
+
+
+/* arbaz part end */

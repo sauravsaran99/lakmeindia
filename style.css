@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Noto Sans Display', sans-serif;
+    font-family: 'Rubik', sans-serif;
+}
+
+/* Header */
+
+body {
+    min-height: 100%;
+}
+
+section {
+    position: relative;
+}
+
+nav {
+    width: 100%;
+    height: 70px;
+    background-color: black;
+}
+
+#header-box {
+    width: 100%;
+    height: 88vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.header-circle { 
+    text-align: center;
+} 
+
+#header-dot {
+    list-style-type: none;
+    left: 50%;
+}
+
+.dot {
+    content: '';
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border: 2.5px solid #000;
+    border-radius: 10px;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.dot:focus {
+    background-color: #000;
+}
+
+#header-img2 {
+    display: none;
+}
+
+#header-img3 {
+    display: none;
+}
+/* end of header */
+
+/* medium part start */
+
+.lip {
+    width: 550px;
+    height: 150px;
+    margin: 0 auto;
+    align-items: center;
+    background-image: url(/image/lipistik.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+h1 {
+    width: 250px;
+    margin: 10% auto;
+    color: #fff;
+    font-weight: 400;
+    font-size: 25px;
+}
+
+/* mobile-responsive */
+@media only screen and (min-width: 0px) and (max-width: 375px) {
+    #header-img {
+        display: none;
+    }
+
+    #header-img2 {
+        display: none;
+    }
+
+    #header-img3 {
+        display: block;
+    }
+    .lip {
+        width: 280px;
+        height: 100px;
+    }
+
+    #header-box {
+        height: 58vh;
+    }
+}
+
+/* medium-responsive */
+@media only screen and (min-width: 375px) and (max-width: 768px) {
+    #header-img {
+        display: none;
+    }
+
+    #header-img2 {
+        display: block;
+    }
+
+    .lip {
+        width: 420px;
+        height: 120px;
+    }
+
+    #header-box {
+        height: 68vh;
+    }
+}
+
+/* cart */
+
+
+#productbtn {
+    padding: 10px 20px;
+}
+
