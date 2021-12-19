@@ -126,21 +126,6 @@ div6.append(div6Box1, div6Box2, div6Box3);
 var cartValue = 1;
 
 
-div6Box1.addEventListener('click', minusProduct);
-
-div6Box2.textContent = cartValue;
-function minusProduct() {
-    cartValue--
-    div6Box2.textContent = cartValue;
-    if(cartValue >= 0) {
-        emptyCart(arr.splice(ind, 1));
-        sum = sum - Number(elm.currentPrice);
-        oldSum = oldSum - Number(elm.oldPrice);
-       document.querySelector('.savings').textContent = '₹'+' '+(sum - oldSum);
-       document.querySelector('.totalPrice').textContent = '₹'+' '+sum;
-    } 
-}
-
 // div6.div6Box1.textContent = '+'
 
 div6Box3.addEventListener('click', plusProduct);
@@ -162,6 +147,28 @@ function plusProduct() {
             document.querySelector('.totalPrice2').textContent = '₹'+' '+(43+sum);
         } 
     } 
+}
+
+
+div6Box2.textContent = cartValue;
+
+
+div6Box1.addEventListener('click', minusProduct);
+
+
+function minusProduct() {
+    cartValue = cartValue -1;
+    div6Box2.textContent = cartValue;
+    // if(cartValue >= 0) {
+        sum = sum - Number(elm.currentPrice);
+        oldSum = oldSum - Number(elm.oldPrice);
+       document.querySelector('.savings').textContent = '₹'+' '+(sum - oldSum);
+       document.querySelector('.totalPrice').textContent = '₹'+' '+sum;
+       document.querySelector('.totalPrice2').textContent = '₹'+' '+(120+sum);
+       if(cartValue == 0) {
+       emptyCart(arr.splice(ind, 1));
+       }
+    // } 
 }
 
 })
