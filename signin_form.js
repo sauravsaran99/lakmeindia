@@ -7,24 +7,17 @@ function goToSignUpPage() {
 //  Added Shantanu 
 
 
-document.querySelector(".login-btn").addEventListener("click", function() {
-    // window.location.href = "lakmehomepage.html"
-    window.location.href = "index.html"
-})
-
+document.querySelector(".login-btn").addEventListener("click", signInBtn)
 //  Added Shantanu 
 
 document.querySelector("#home").addEventListener("click", function() {
-    window.location.href = "lakmehome.html"
+    window.location.href = "index.html"
 })
-document.querySelector("#pro").addEventListener("click", function() {
-    window.location.href = "pro.html"
-})
-document.querySelector("#cart").addEventListener("click", function() {
-    window.location.href = "cart.html"
-})
+// document.querySelector("#pro").addEventListener("click", function() {
+//     window.location.href = "product_page.html"
+// })
 document.querySelector("#signin").addEventListener("click", function() {
-        window.location.href = "signIn.html"
+        window.location.href = "signin_form.html"
     })
     // nav code end here
 
@@ -44,11 +37,16 @@ function signInBtn(event) {
 
     var email = document.querySelector('#inputEmail').value;
     var password = document.querySelector("#inputPasswd").value;
+    var count = 0;
 
     for (var i = 0; i < userData.length; i++) {
         if (userData[i].email == email && userData[i].password == password) {
-            window.location.href = "product.html"
+            window.location.href = "index.html";
+            count++;
         }
+    }
+    if(count == 0){
+        alert("Please Check your email and password")
     }
 }
 

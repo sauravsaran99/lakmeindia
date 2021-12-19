@@ -5,6 +5,17 @@ let arr = JSON.parse(localStorage.getItem('addCart'));
 
 document.querySelector('#cross').addEventListener('click', crossDis);
 
+document.querySelector('#cart').addEventListener('click', changeClass);
+
+function changeClass() {
+    document.querySelector('.fixed').style.display = "block";
+}
+document.querySelector('.fa-times').addEventListener('click', closeClass);
+
+function closeClass(){
+    document.querySelector('.fixed').style.display = "none";
+}
+
 function crossDis() {
     document.querySelector('.fixed').classList.add('display')
 }
